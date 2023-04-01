@@ -1,0 +1,53 @@
+// JavaScript Class
+.hamburger__active {
+    .hamburger__lines {
+        background-color: $primaryColor;
+        transform-origin: 0%;
+        // border-radius: 1px;
+
+        &:nth-child(1) {
+            animation: rotateBottom 0.3s ease-out forwards;
+        }
+        &:nth-child(2) {
+            background-color: white;
+            animation: slideRight 1s ease-out forwards;
+        }
+
+        &:nth-child(3) {
+            animation: rotateTop 0.3s ease-out forwards;
+        }
+    }
+}
+
+.hamburger__reverse {
+    .hamburger__lines {
+        background-color: white;
+        transform-origin: 0%;
+
+        &:nth-child(1) {
+            animation: reverseRotateBottom 0.3s ease-out forwards;
+        }
+        &:nth-child(2) {
+            animation: slideLeft .3s ease-out forwards;
+        }
+
+        &:nth-child(3) {
+            animation: reverseRotateTop 0.3s ease-out forwards;
+        }
+    }
+}
+
+.blur {
+    animation: blur 1s ease-out forwards;
+}
+.reverseBlur {
+    animation: reverseBlur 1s ease-out forwards;
+}
+
+.rightIn {
+    animation: rightIn 1s ease-out forwards;
+}
+
+.rightOut {
+    animation: rightOut 1s ease-out forwards;
+}

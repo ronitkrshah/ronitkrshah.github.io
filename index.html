@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/main/style.css">
+    <title>RKS</title>
+</head>
+
+<body>
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <h1 class="navbar__logo">RKS</h1>
+
+            <!-- Links -->
+            <div class="navbar__links">
+                <a href="#" style="--i:1;" class="active">Home</a>
+                <a href="wip.html" target="_blank" style="--i:2;">About</a>
+                <a href="wip.html" target="_blank" style="--i:3;">Skills</a>
+                <a href="wip.html" target="_blank" style="--i:4;">Contact Me</a>
+            </div>
+
+            <!-- Hamburger -->
+            <div class="hamburger" id="hamburger">
+                <div class="hamburger__lines"></div>
+                <div class="hamburger__lines"></div>
+                <div class="hamburger__lines"></div>
+            </div>
+        </nav>
+
+        <!-- Hamburger List -->
+        <dir class="hamburger__list" id="hamburger__list">
+            <div class="hamburger__list--links">
+                <a href="#" style="--i:1;" class="active">Home</a><hr>
+                <a href="wip.html" target="_blank" style="--i:2;">About</a><hr>
+                <a href="wip.html" target="_blank" style="--i:3;">Skills</a><hr>
+                <a href="wip.html" target="_blank" style="--i:4;">Contact Me</a><hr>
+            </div>
+        </dir>
+
+        <!-- Hero -->
+        <div class="hero">
+            <div class="hero__image">
+                <img src="assets/Giyu.jpg" alt="">
+            </div>
+
+            <div class="hero__info">
+                <h3>Hello, I'm</h3>
+                <h1 data-text="Ronit&nbsp;Kr&nbsp;Shah">Ronit Kr Shah</h1>
+                <h2>A <span id="typed"></span></h2>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+
+            <div class="sidebar__date">
+                <span id="date"></span>
+            </div>
+
+            <div class="sidebar__links">
+                <a href="https://github.com/ronitkrshah" target="_blank"><img src="assets/git.svg" id="github"></a>
+                <a href="https://telegram.me/ds_giyu" target="_blank"><img src="assets/tg.svg" id="tg"></a>
+            </div>
+
+            <div class="sidebar__line"></div>
+            <div class="sidebar__line sidebar__line2"></div>
+
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

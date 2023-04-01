@@ -1,0 +1,208 @@
+// Animations
+
+// Slide
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(15rem);
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(15rem);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(3rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-6rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-15rem);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+// Hamburger List - animation
+@keyframes rightIn {
+    0% {
+        right: -50%;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes rightOut {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: -50%;
+    }
+}
+// Up & Down - Sidebar Line
+@keyframes upDownHeight {
+    0% {
+        height: 0;
+    }
+    20% {
+        height: 40%;
+    }
+    40% {
+        height: 10%;
+    }
+    60% {
+        height: 70%;
+    }
+    80%{
+        height: 90%;
+    }
+    100% {
+        height: 0;
+    }
+}
+@keyframes upDownWidth {
+    0% {
+        width: 0;
+    }
+    20% {
+        width: 40%;
+    }
+    40% {
+        width: 10%;
+    }
+    60% {
+        width: 70%;
+    }
+    80%{
+        width: 90%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+// Rotate - Hamburger
+@keyframes rotateBottom {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+       rotate: 45deg;
+    }
+}
+@keyframes rotateTop {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+       rotate: -45deg;
+    }
+}
+
+// Reverse Rotate - Hamburger
+@keyframes reverseRotateBottom {
+    0% {
+        rotate: 45deg;
+        
+    }
+    100% {
+        rotate: 0deg;
+    }
+}
+@keyframes reverseRotateTop {
+    0% {
+        rotate: -45deg;
+    }
+    100% {
+        rotate: 0deg;
+    }
+}
+
+// Float - For hero Image
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(1rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+// Loading For Hero Name
+@keyframes load {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+// Other Animations
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blur {
+    0% {
+        filter: blur(0);
+    }
+    100% {
+        filter: blur(6px);
+    }
+}
+
+@keyframes reverseBlur {
+    0% {
+        filter: blur(6px);
+    }
+    100% {
+        filter: blur(0);
+    }
+}

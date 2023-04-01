@@ -1,0 +1,100 @@
+// Sidebar
+.sidebar {
+    position: fixed;
+    left: 0;
+    bottom: -20rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    animation: slideUp 3s ease-out forwards;
+
+    @include big-phone {
+        bottom: 0.4rem;
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: center;
+        animation: none;
+    }
+
+    &__date {
+        color: $primaryColor;
+        rotate: 270deg;
+        margin-bottom: 2.7rem;
+        font-family: $Martin;
+        font-size: 0.8rem;
+        text-shadow: $primaryColor 0px 0px 9px;
+
+        @include big-phone {
+            display: none;
+        }
+    }
+
+    &__line {
+        height: 3rem;
+        width: 1px;
+        background-color: $white;
+        position: relative;
+
+        &::before {
+            content: "";
+            background-color: $primaryColor;
+            position: absolute;
+            width: 1px;
+            height: 3rem;
+            bottom: 0;
+            box-shadow: $primaryColor 0px 0px 4px;
+            animation: upDownHeight 10s ease-in-out infinite;
+        }
+
+        @include big-phone {
+            height: 1px;
+            order: 3;
+            width: 40%;
+            animation: slideIn 2s linear;
+
+            &::before {
+                width: 40%;
+                height: 1px;
+                animation: upDownWidth 10s ease-in-out infinite;
+            }
+        }
+    }
+
+    &__line2 {
+        display: none;
+        order: 1;
+        rotate: 180deg;
+
+        @include big-phone {
+            display: block;
+            animation: slideIn 2s linear;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+
+        @include big-phone {
+            flex-direction: row;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            order: 2;
+            animation: slideTop 2s ease-out;
+        }
+    }
+    &__links a img {
+        width: 1.7rem;
+        margin: 0.4rem auto;
+        opacity: 0.5;
+        transition: opacity 0.3s;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        @include big-phone {
+            margin: auto 0.4rem;
+        }
+    }
+}

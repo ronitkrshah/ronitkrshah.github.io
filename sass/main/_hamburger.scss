@@ -1,0 +1,21 @@
+// Hamburger
+@import "media";
+.hamburger {
+
+    cursor: pointer;
+    display: none;
+
+    &__lines {
+        height: 2px;
+        width: 20px;
+        background-color: $white;
+
+        &:nth-child(2) {
+            margin: 5px 0;
+        }
+    }
+
+    @include big-phone {
+        display: block;
+    }
+}

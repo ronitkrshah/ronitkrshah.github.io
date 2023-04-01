@@ -1,0 +1,70 @@
+// Navbar
+@import "variables";
+@import "media";
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 4rem;
+    background-color: $gray;
+    font-family: $Poppins;
+    color: $white;
+    background-color: transparent;
+
+    @include tablet {
+        padding: .5rem 1rem;
+    }
+    @include big-phone {
+        padding: 1rem 3rem;
+    }
+    @include big-phone {
+        padding: 1rem 2rem;
+    }
+
+
+    &__logo {
+        font-size: 2.5rem;
+        cursor: default;
+        animation: slideBottom 1s ease-in-out;
+
+        @include ipad {
+            font-size: 2rem;
+        }
+        @include phone {
+            font-size: 1.7rem;
+        }
+    }
+
+    &__links a{
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        padding: 0 10px;
+        opacity: 0;
+        font-size: 1.2rem;
+        transition: all .6s;
+        animation: slideBottom 1s ease-in-out calc(0.2s * var(--i)) forwards;
+
+        &:hover {
+            color: $primaryColor;
+        }
+
+        @include ipad {
+            font-size: 1rem;
+        }
+
+        @include big-phone {
+            display: none;
+        }
+
+    }
+
+    & .active {
+        color: $primaryColor;
+    }
+}
