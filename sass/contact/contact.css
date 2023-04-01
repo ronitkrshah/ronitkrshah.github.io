@@ -1,0 +1,19 @@
+.contact {
+  height: 100vh;
+  width: 95%;
+  overflow: hidden;
+  background-color: rgba(22, 24, 24, 0.4509803922);
+  position: absolute;
+  top: 4rem;
+  right: -100%;
+  border-left: 0.7rem solid #08fbd2;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-backdrop-filter: blur(2.4rem);
+          backdrop-filter: blur(2.4rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(241, 236, 236);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}/*# sourceMappingURL=contact.css.map */

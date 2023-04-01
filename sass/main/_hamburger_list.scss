@@ -1,7 +1,7 @@
 // Hamburger List 
 .hamburger__list {
     position: absolute;
-    right: -15rem;
+    right: -100%;
     top: 4rem;
     width: 45%;
     height: 100%;
@@ -20,7 +20,7 @@
         justify-content: center;
         flex-direction: column;
 
-        & a {
+        & span {
             color: $white;
             font-family: $Poppins;
             text-decoration: none;
@@ -29,6 +29,7 @@
 
             &:hover {
                 color: $primaryColor;
+                cursor: pointer;
             }
         }
     }

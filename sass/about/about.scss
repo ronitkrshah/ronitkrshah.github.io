@@ -1,0 +1,43 @@
+// About Page
+@import "../main/variables";
+@import "../main/animations";
+@import "../main/media";
+
+.about {
+    @include open-page;
+    font-family: $Poppins;
+
+    &__container {
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        &--main {
+            color: $white;
+            margin-top: 5rem;
+            padding: 0 2rem;
+
+            & h1 {
+                font-size: 2.7rem;
+                margin-bottom: 2rem;
+
+                @include phone {
+                    font-size: 2rem;
+                }
+            }
+
+            & p {
+                font-size: 1.2rem;
+
+
+                @include phone {
+                    font-size: 1rem;
+                }
+
+                & span {
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+}

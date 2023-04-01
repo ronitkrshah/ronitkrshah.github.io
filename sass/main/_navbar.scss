@@ -40,7 +40,7 @@
         }
     }
 
-    &__links a{
+    &__links span{
         display: inline-block;
         text-decoration: none;
         color: white;
@@ -52,6 +52,7 @@
 
         &:hover {
             color: $primaryColor;
+            cursor: pointer;
         }
 
         @include ipad {

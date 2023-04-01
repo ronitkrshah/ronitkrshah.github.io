@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sass/main/style.css">
+    <link rel="stylesheet" href="sass/about/about.css">
+    <link rel="stylesheet" href="sass/skills/skills.css">
+    <link rel="stylesheet" href="sass/contact/contact.css">
     <title>RKS</title>
 </head>
 
@@ -14,64 +17,124 @@
     <!-- Container -->
     <div class="container">
 
-        <!-- Navbar -->
-        <nav class="navbar">
-            <h1 class="navbar__logo">RKS</h1>
+        <!-- Landing -->
+        <main>
+            <!-- Navbar -->
+            <nav class="navbar">
+                <h1 class="navbar__logo">RKS</h1>
 
-            <!-- Links -->
-            <div class="navbar__links">
-                <a href="#" style="--i:1;" class="active">Home</a>
-                <a href="wip.html" target="_blank" style="--i:2;">About</a>
-                <a href="wip.html" target="_blank" style="--i:3;">Skills</a>
-                <a href="wip.html" target="_blank" style="--i:4;">Contact Me</a>
+                <!-- Links -->
+                <div class="navbar__links">
+                    <span  style="--i:1;" class="active link__home">Home</span>
+                    <span style="--i:2;" class="link__about">About</span>
+                    <span  style="--i:3;" class="link__skills">Skills</span>
+                    <span  style="--i:4;" class="link__contact">Contact Me</span>
+                </div>
+
+                <!-- Hamburger -->
+                <div class="hamburger" id="hamburger">
+                    <div class="hamburger__lines"></div>
+                    <div class="hamburger__lines"></div>
+                    <div class="hamburger__lines"></div>
+                </div>
+            </nav>
+
+            <!-- Hamburger List -->
+            <dir class="hamburger__list" id="hamburger__list">
+                <div class="hamburger__list--links">
+                    <span  style="--i:1;" class="active link__home">Home</span>
+                    <hr>
+                    <span  style="--i:2;" class="link__about">About</span>
+                    <hr>
+                    <span  style="--i:3;" class="link__skills">Skills</span>
+                    <hr>
+                    <span  style="--i:4;" class="link__contact">Contact Me</span>
+                    <hr>
+                </div>
+            </dir>
+
+            <!-- Hero -->
+            <div class="hero">
+                <div class="hero__image">
+                    <img src="assets/Giyu.jpg" alt="">
+                </div>
+
+                <div class="hero__info">
+                    <h3>Hello, I'm</h3>
+                    <h1 data-text="Ronit&nbsp;Kr&nbsp;Shah">Ronit Kr Shah</h1>
+                    <h2>A <span id="typed"></span></h2>
+                </div>
             </div>
 
-            <!-- Hamburger -->
-            <div class="hamburger" id="hamburger">
-                <div class="hamburger__lines"></div>
-                <div class="hamburger__lines"></div>
-                <div class="hamburger__lines"></div>
-            </div>
-        </nav>
+            <!-- Sidebar -->
+            <div class="sidebar" id="sidebar">
 
-        <!-- Hamburger List -->
-        <dir class="hamburger__list" id="hamburger__list">
-            <div class="hamburger__list--links">
-                <a href="#" style="--i:1;" class="active">Home</a><hr>
-                <a href="wip.html" target="_blank" style="--i:2;">About</a><hr>
-                <a href="wip.html" target="_blank" style="--i:3;">Skills</a><hr>
-                <a href="wip.html" target="_blank" style="--i:4;">Contact Me</a><hr>
-            </div>
-        </dir>
+                <div class="sidebar__date">
+                    <span id="date"></span>
+                </div>
 
-        <!-- Hero -->
-        <div class="hero">
-            <div class="hero__image">
-                <img src="assets/Giyu.jpg" alt="">
-            </div>
+                <div class="sidebar__links">
+                    <a href="https://github.com/ronitkrshah" target="_blank"><img src="assets/git.svg" id="github"></a>
+                    <a href="https://telegram.me/ds_giyu" target="_blank"><img src="assets/tg.svg" id="tg"></a>
+                </div>
 
-            <div class="hero__info">
-                <h3>Hello, I'm</h3>
-                <h1 data-text="Ronit&nbsp;Kr&nbsp;Shah">Ronit Kr Shah</h1>
-                <h2>A <span id="typed"></span></h2>
+                <div class="sidebar__line"></div>
+                <div class="sidebar__line sidebar__line2"></div>
+
+            </div>
+        </main>
+
+        <!-- About -->
+        <div class="about" id="about">
+            <div class="about__container">
+                <div class="about__container--main">
+                    <h1>About Me</h1>
+                    <p class="breif--info">
+                        Hi, Wassup<br>
+                        I'm <span>Ronit Kr Shah</span> aka <span>RKS</span>. A <span>Frontend Web Developer</span> and
+                        <span>Freelancer</span>.
+
+                        <br>
+                        <br>
+                        Ex-buildbot for <span>"<i>phoenix</i> (Redmi K30 4G)"</span>
+
+                    </p>
+                </div>
             </div>
         </div>
 
-        <!-- Sidebar -->
-        <div class="sidebar" id="sidebar">
-
-            <div class="sidebar__date">
-                <span id="date"></span>
+        <!-- Skills  -->
+        <div class="skills" id="skills">
+            <div class="skills--main"><h1>Skills</h1></div>
+            <div class="skills__container">
+                <div class="skills__container--item">
+                    <img src="assets/html.svg" alt="">
+                    <h3>HTML</h3>
+                </div>
+                <div class="skills__container--item">
+                    <img src="assets/css.svg" alt="">
+                    <h3>CSS</h3>
+                </div>
+                <div class="skills__container--item">
+                    <img src="assets/js.svg" alt="">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skills__container--item">
+                    <img src="assets/tailwind.svg" alt="">
+                    <h3>Tailwind CSS</h3>
+                </div>
+                <div class="skills__container--item">
+                    <img src="assets/sass.svg" alt="">
+                    <h3>SASS</h3>
+                </div>
             </div>
+        </div>
 
-            <div class="sidebar__links">
-                <a href="https://github.com/ronitkrshah" target="_blank"><img src="assets/git.svg" id="github"></a>
-                <a href="https://telegram.me/ds_giyu" target="_blank"><img src="assets/tg.svg" id="tg"></a>
+        <!-- Contact  -->
+        <div class="contact" id="contact">
+            <div class="contact__main">
+                <span>I Will Add Contact Link Soon</span>
             </div>
-
-            <div class="sidebar__line"></div>
-            <div class="sidebar__line sidebar__line2"></div>
-
         </div>
     </div>
 

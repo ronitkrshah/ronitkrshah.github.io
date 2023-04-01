@@ -1,0 +1,13 @@
+// Contact Page 
+@import "../main/variables";
+
+.contact {
+    @include open-page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        font-family: $Poppins;
+        font-size: 1.6rem;
+    }
+}
