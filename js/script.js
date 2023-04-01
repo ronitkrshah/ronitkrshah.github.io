@@ -63,7 +63,7 @@ hamBurgerBtn.addEventListener("click", () => {
 
 // Typed JavaScript
 const typed = new Typed("#typed", {
-    strings: ["Frontend Web Developer", "Custom ROM Maintainer", "Music Lover"],
+    strings: ["Freelancer","Frontend Web Developer", "Custom ROM Maintainer", "Music Lover"],
 
     typeSpeed: 70,
     backSpeed: 70,
