@@ -7,7 +7,7 @@ const Links = [
     label: "Home",
   },
   {
-    href: "#",
+    href: "#about",
     label: "About",
   },
   {
@@ -30,7 +30,7 @@ export function Header() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6, delay: 0.5 }}
-      className="container my-4 mx-auto"
+      className="z-40 top-0 left-0 right-0 container my-4 fixed mx-auto"
     >
       <header className="backdrop-filter backdrop-blur-lg px-4 py-2 rounded-3xl bg-white/5 flex justify-between items-center">
         <div>

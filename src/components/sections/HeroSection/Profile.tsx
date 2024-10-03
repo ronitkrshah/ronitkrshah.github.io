@@ -13,7 +13,7 @@ export function Profile() {
         "Custom ROM Maintainer",
         "Open Source Contributor",
         "Android Enthusiast",
-        "VIM User BTW",
+        "I Use Vim BTW",
       ],
       typeSpeed: 50,
       backSpeed: 50,
