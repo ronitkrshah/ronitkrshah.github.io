@@ -12,8 +12,6 @@ export function App() {
         <main className="flex-1">
           <HeroSection />
           <AboutSection />
-          <HeroSection />
-          <HeroSection />
         </main>
         <CustomCursor />
       </div>

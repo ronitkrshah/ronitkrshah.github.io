@@ -28,12 +28,12 @@ export function Profile() {
 
   return (
     <Fragment>
-      <motion.div className="flex flex-col leading-tight">
+      <motion.div className="flex flex-col leading-tight text-center">
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.2 }}
-          className="text-[40px]"
+          className="text-3xl md:text-[40px]"
         >
           Hi, I'm
         </motion.span>
@@ -41,7 +41,7 @@ export function Profile() {
           initial={{ opacity: 0, translateY: 20 }}
           animate={{ opacity: 1, translateY: 0 }}
           transition={{ delay: 2, duration: 0.5 }}
-          className="text-[60px]"
+          className="text-[40px] md:text-[60px]"
         >
           Ronit Kr Shah
         </motion.span>
