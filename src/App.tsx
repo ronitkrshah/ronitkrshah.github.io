@@ -1,6 +1,12 @@
 import { CustomCursor, Header, SparklesBG } from "./components";
 import { Fragment } from "react/jsx-runtime";
-import { AboutSection, HeroSection } from "./components/sections";
+import {
+  AboutSection,
+  ContactSection,
+  HeroSection,
+  ProjectsSection,
+  SkillsSection,
+} from "./sections";
 
 export function App() {
   return (
@@ -12,6 +18,9 @@ export function App() {
         <main className="flex-1">
           <HeroSection />
           <AboutSection />
+          <SkillsSection />
+          <ProjectsSection />
+          <ContactSection />
         </main>
         <CustomCursor />
       </div>

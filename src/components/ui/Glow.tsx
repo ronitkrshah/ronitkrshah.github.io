@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export function Glow() {
+export default function Glow() {
   return (
     <motion.div
       animate={{

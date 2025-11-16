@@ -1,1 +1,4 @@
-export { Logo } from "./Logo";
+import Logo from "./Logo";
+import Glow from "./Glow";
+
+export { Logo, Glow };
