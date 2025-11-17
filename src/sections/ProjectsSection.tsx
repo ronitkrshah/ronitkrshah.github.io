@@ -52,7 +52,7 @@ const projects = [
     ],
   },
   {
-    title: "Video Stream like Backend",
+    title: "Video Streaming Backend",
     description:
       "Video streaming backend with secure JWT authentication, allowing users to register, upload, and access videos efficiently. Built with MongoDB for fast storage and retrieval of user and video data",
     icon: FaVideo,
@@ -61,7 +61,7 @@ const projects = [
       {
         icon: FaGithub,
         label: "GitHub",
-        href: "https://github.com/ronitkrshah/yt-like-backend.git",
+        href: "https://github.com/ronitkrshah/video-streaming-backend.git",
       },
     ],
   },
